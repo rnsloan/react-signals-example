@@ -1,8 +1,15 @@
-class HelloWorld {
-  say() {
-    console.log('hello world');
-  }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var test = new HelloWorld();
-test.say();
+const App = () => {
+  return (
+    <h1>Hello, world!</h1>
+  )
+};
+
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+);
+
