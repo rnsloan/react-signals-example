@@ -2,7 +2,7 @@ import MiniSignal from 'mini-signals';
 import React from 'react';
 
 // used to dispatch signals to this component from other components
-export const progressLoaderSignal = new MiniSignal();
+export const loadingBarSignal = new MiniSignal();
 
 export class LoadingBar extends React.Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export class LoadingBar extends React.Component {
 
     this.changeDisplay = this.changeDisplay.bind(this);
     //add signal listener
-    this.binding = progressLoaderSignal.add(this.changeDisplay);
+    this.binding = loadingBarSignal.add(this.changeDisplay);
   }
 
   changeDisplay(bool) {
