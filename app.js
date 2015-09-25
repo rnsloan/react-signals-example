@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Buttons from './components/Buttons'
-import LoadingBar from './components/LoadingBar'
+import {LoadingBar} from './components/LoadingBar'
 
 const App = () => {
   return (
