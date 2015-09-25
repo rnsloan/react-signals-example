@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Buttons from './components/Buttons'
+import LoadingBar from './components/LoadingBar'
+
 const App = () => {
   return (
-    <h1>Hello, world!</h1>
+    <div>
+      <LoadingBar />
+      <Buttons />
+    </div>
   )
 };
 
