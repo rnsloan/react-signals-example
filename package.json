@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress --colors --config webpack.config.js",
+    "mocha": "mocha",
     "start": "http-server -p 3000",
+    "test": "webpack --config webpack.test.config.js && mocha tests/test-bundle.js --full-trace",
     "watch": "webpack --progress --colors --watch --config webpack.config.js",
     "webpack": "webpack"
   },
@@ -20,5 +22,12 @@
     "react": "^0.14.0-rc1",
     "react-dom": "^0.14.0-rc1",
     "webpack": "^1.12.2"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "jsdom": "^6.5.1",
+    "mocha": "^2.3.3",
+    "mocha-jsdom": "^1.0.0",
+    "react-addons-test-utils": "^0.14.0-rc1"
   }
 }

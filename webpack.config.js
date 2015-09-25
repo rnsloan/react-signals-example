@@ -3,14 +3,10 @@ module.exports = {
   output: {
     filename: "./bundle.js"
   },
-  resolve: {
-    extensions: ['', '.js']
-  },
-
   module: {
     loaders: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js)$/,
         exclude: /node_modules/,
         loader: 'babel?stage=1'
       }
