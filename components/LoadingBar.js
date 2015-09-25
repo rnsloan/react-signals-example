@@ -13,14 +13,17 @@ export class LoadingBar extends React.Component {
     };
 
     this.changeDisplay = this.changeDisplay.bind(this);
-    //add signal listener
-    this.binding = loadingBarSignal.add(this.changeDisplay);
   }
 
   changeDisplay(bool) {
     this.setState({
       show: bool
     });
+  }
+
+  componentDidMount() {
+    //add signal listener
+    this.binding = loadingBarSignal.add(this.changeDisplay);
   }
 
   componentWillUnmount() {
