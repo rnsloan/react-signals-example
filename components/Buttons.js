@@ -1,11 +1,16 @@
 import React from 'react';
 
-export default () => {
-  return (
-    <div>
-      <button>Show loading bar</button>
-      <br />
-      <button>Hide loading bar</button>
-    </div>
-  )
-};
+export default class Buttons extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <button>Show loading bar</button>
+        <button>Hide loading bar</button>
+      </div>
+    )
+  }
+}
